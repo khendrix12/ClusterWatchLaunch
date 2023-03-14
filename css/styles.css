@@ -11496,4 +11496,5 @@ a img {
 .headshots img {
   width: 160px;
   object-fit: cover;
+  border-radius: 10%;
 }
