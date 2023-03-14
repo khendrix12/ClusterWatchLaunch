@@ -19,6 +19,8 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <div id="particles-js"></div>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -26,19 +28,21 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#about">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Overview</a></li>
                         <li class="nav-item"><a class="nav-link" href="#services">Metrics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Deployment</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div  class="container px-4 px-lg-5 h-100">
+                <div id='header-container' class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <img id="mast-img" src="./assets/img/logo-white-lettering.png" alt="">
+                    <h1 class="text-white">Monitor Kubernetes cluster metrics in real-time with ClusterWatch</h1>
+                    <h3 class="text-white-75">Light-weight and powerful. Deploy and monitor cluster metrics with dynamic dashboard, manage key cluster units with customized alerts, and scale your application with ease. </h3>
                 </div>
             </div>
         </header>
@@ -96,7 +100,7 @@
         </section>
         <!-- Portfolio-->
         <div id="portfolio">
-            <div class="container-fluid p-0 bg-white">
+            <div class="container-fluid p-0">
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box h-100 w-100" href="assets/img/portfolio/fullsize/1.png" title="Project Name">
@@ -164,44 +168,50 @@
             </div>
         </section>
         <!-- Contact-->
-        <section class="headshots page-section d-flex text-white" id="contact">
-            <div class="headshots d-flex flex-wrap flex-grow-1 justify-content-center">
-                    <div class="text-center mx-5">
-                        <img class="headshot mx-auto mb-2" src="assets/img/newkev.png" alt="...">
-                        <p>Kevin Hendrix <br>
-                            <a href="https://www.linkedin.com/in/kevin-hendrix-sw?trk=profile-badge">LinkedIn</a> |
-                            <a href="https://github.com/khendrix12">Github</a>
-                        </p>
+
+        
+
+            <section class="headshots page-section d-flex text-white" id="contact">
+                <div class="headshots d-flex flex-wrap flex-grow-1 justify-content-center">
+                        <div class="text-center mx-5">
+                            <img class="headshot mx-auto mb-2" src="assets/img/newkev.png" alt="...">
+                            <p>Kevin Hendrix <br>
+                                <a href="https://www.linkedin.com/in/kevin-hendrix-sw?trk=profile-badge">LinkedIn</a> |
+                                <a href="https://github.com/khendrix12">Github</a>
+                            </p>
+                        </div>
+                        <div class="text-center mx-5">
+                            <img class="headshot img-fluid img-profile  mx-auto mb-2" src="assets/img/suavesheng.jpg" alt="...">
+                            <p>Sheng Li<br>
+                                <a href="https://www.linkedin.com/in/sheng-li-3537783a/">LinkedIn</a> |
+                                <a href="https://github.com/khendrix12">Github</a>
+                            </p>
+                        </div>
+                        <div class="text-center mx-5">
+                            <img class="headshot img-fluid img-profile  mx-auto mb-2" src="assets/img/suavemushrath.png" alt="...">
+                            <p>Mushrath Choudhury<br>
+                                <a href="https://www.linkedin.com/in/kevin-hendrix-sw?trk=profile-badge">LinkedIn</a> |
+                                <a href="https://github.com/khendrix12">Github</a>
+                            </p>
+                        </div>
+                        <div class="text-center mx-5">
+                            <img class="headshot  mx-auto mb-2" src="assets/img/suavejordy.jpg" alt="...">
+                            <p>Jordy Gonzalez<br>
+                                <a href="https://www.linkedin.com/in/kevin-hendrix-sw?trk=profile-badge">LinkedIn</a> |
+                                <a href="https://github.com/khendrix12">Github</a>
+                            </p>
                     </div>
-                    <div class="text-center mx-5">
-                        <img class="headshot img-fluid img-profile  mx-auto mb-2" src="assets/img/suavesheng.jpg" alt="...">
-                        <p>Sheng Li<br>
-                            <a href="https://www.linkedin.com/in/sheng-li-3537783a/">LinkedIn</a> |
-                            <a href="https://github.com/khendrix12">Github</a>
-                        </p>
-                    </div>
-                    <div class="text-center mx-5">
-                        <img class="headshot img-fluid img-profile  mx-auto mb-2" src="assets/img/suavemushrath.png" alt="...">
-                        <p>Mushrath Choudhury<br>
-                            <a href="https://www.linkedin.com/in/kevin-hendrix-sw?trk=profile-badge">LinkedIn</a> |
-                            <a href="https://github.com/khendrix12">Github</a>
-                        </p>
-                    </div>
-                    <div class="text-center mx-5">
-                        <img class="headshot  mx-auto mb-2" src="assets/img/suavejordy.jpg" alt="...">
-                        <p>Jordy Gonzalez<br>
-                            <a href="https://www.linkedin.com/in/kevin-hendrix-sw?trk=profile-badge">LinkedIn</a> |
-                            <a href="https://github.com/khendrix12">Github</a>
-                        </p>
                 </div>
-            </div>
-        </section>
+            </section>
+        
+
         <!-- Footer-->
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <script src="particles.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
