@@ -11677,7 +11677,7 @@ fieldset:disabled .btn {
 }
 #mainNav.navbar-shrink {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 html {
   height: 100%;
@@ -11773,20 +11773,24 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #212529;
+    color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
     color: #0bc1d1;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: rgba(255, 255, 255, 0.8);
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
     color: #0bc1d1;
   }
+}
+.navbar-toggler,
+.navbar-toggler-icon {
+  /* color:white !important; */
 }
 
 header.masthead {
@@ -11966,15 +11970,15 @@ a img {
 }
 
 h1.text-white {
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 h3.text-white-75 {
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 #header-container {
-  margin-top: -50px;
+  margin-top: -30px;
   padding-bottom: 0px;
 }
 
@@ -11982,10 +11986,17 @@ h3.text-white-75 {
   /* padding-bottom: 0; */
 }
 
-.gif {
+.gif,
+.carousel {
   width: 100%;
   max-width: 672px;
   min-width: 492px;
+  border-radius: 1rem;
+  box-shadow: 25px 23px 26px -8px rgba(0, 0, 0, 0.75);
+}
+
+.headshot {
+  box-shadow: 25px 23px 26px -8px rgba(0, 0, 0, 0.75);
 }
 
 @media (max-width: 991.98px) {
@@ -11993,6 +12004,26 @@ h3.text-white-75 {
     max-width: 100%;
     min-width: 0;
   }
+}
+
+.carousel,
+.carousel-item {
+  margin: auto;
+  /* width: 100%; */
+  max-width: 672px;
+  min-width: 492px;
+}
+
+@media (max-width: 991.98px) {
+  .carousel,
+  .carousel-item {
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+#services {
+  margin-top: -25px;
 }
 
 canvas {
@@ -12030,7 +12061,7 @@ canvas {
 .carousel-item {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: transform 0.5s ease-in-out;
 }
 
